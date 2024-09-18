@@ -59,8 +59,9 @@ A cutting-edge Next.js base project with TypeScript, React, ESLint, Prettier, Ta
 - 💖 **Prettier** - Opinionated Code Formatter
 - 🏗 **Feature-Sliced Design** - Architectural methodology for frontend projects
 - 🌓 **Dark Mode** - Light/Dark mode with next-themes
-- 🦄 **Husky & Lint-Staged** - Run scripts on your staged files before they are committed
+- 🦄 **Lint-Staged** - Run scripts on your staged files before they are committed
 - 🚀 **GitHub Actions** - Automate your workflows
+- ✅ **[Check Demo](https://current-stack-2024.vercel.app/)** - View a demo of the row check feature.
 
 ## 🏗 Architecture
 
