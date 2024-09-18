@@ -16,19 +16,6 @@ A cutting-edge Next.js base project with TypeScript, React, ESLint, Prettier, Ta
 [Contributing](#-contributing) •
 [License](#-license)
 
-## 🌟 Features
-
-- ⚡️ **Next.js 14** - The React Framework for Production
-- 🔥 **React 18** - A JavaScript library for building user interfaces
-- 🦾 **TypeScript** - Static Type Checking
-- 🎨 **Tailwind CSS** - A Utility-First CSS Framework
-- 📏 **ESLint** - Pluggable JavaScript Linter
-- 💖 **Prettier** - Opinionated Code Formatter
-- 🏗 **Feature-Sliced Design** - Architectural methodology for frontend projects
-- 🌓 **Dark Mode** - Light/Dark mode with next-themes
-- 🦄 **Husky & Lint-Staged** - Run scripts on your staged files before they are committed
-- 🚀 **GitHub Actions** - Automate your workflows
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -61,6 +48,19 @@ A cutting-edge Next.js base project with TypeScript, React, ESLint, Prettier, Ta
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🌟 Features
+
+- ⚡️ **Next.js 14** - The React Framework for Production
+- 🔥 **React 18** - A JavaScript library for building user interfaces
+- 🦾 **TypeScript** - Static Type Checking
+- 🎨 **Tailwind CSS** - A Utility-First CSS Framework
+- 📏 **ESLint** - Pluggable JavaScript Linter
+- 💖 **Prettier** - Opinionated Code Formatter
+- 🏗 **Feature-Sliced Design** - Architectural methodology for frontend projects
+- 🌓 **Dark Mode** - Light/Dark mode with next-themes
+- 🦄 **Husky & Lint-Staged** - Run scripts on your staged files before they are committed
+- 🚀 **GitHub Actions** - Automate your workflows
 
 ## 🏗 Architecture
 
