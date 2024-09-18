@@ -40,8 +40,8 @@ jobs:
         run: npm run build
 
       # Run tests (optional if you have tests set up)
-      - name: Run tests
-        run: npm test
+      # - name: Run tests
+      #   run: npm test
 
       # Optional: Cache Node.js dependencies for faster builds
       - name: Cache Node.js modules

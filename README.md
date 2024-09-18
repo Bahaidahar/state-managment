@@ -40,7 +40,7 @@ A cutting-edge Next.js base project with TypeScript, React, ESLint, Prettier, Ta
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/base-project.git
+   git clone https://github.com/Bahaidahar/current-stack-2024
    cd base-project
    ```
 
@@ -80,7 +80,7 @@ src/
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yourusername/base-project/issues).
+Feel free to check the [issues page](https://github.com/Bahaidahar/current-stack-2024/issues).
 
 ## 📝 License
 
@@ -88,4 +88,4 @@ This project is [MIT](./LICENSE) licensed.
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by [Your Name](https://github.com/Bahaidahar/current-stack-2024)

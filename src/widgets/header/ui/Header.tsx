@@ -10,7 +10,8 @@ const Header = () => {
       </h1>
       <div className="flex items-center space-x-4">
         <Link
-          href="https://github.com/yourusername"
+          href="https://github.com/Bahaidahar"
+          target="_blank"
           className="text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
         >
           <Github className="h-6 w-6" />

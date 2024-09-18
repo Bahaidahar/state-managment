@@ -1,6 +1,6 @@
+import { LinkItem } from "@/entities/link-item";
 import { Footer } from "@/widgets/footer";
 import { Header } from "@/widgets/header";
-import Link from "next/link";
 
 const HomePage = () => {
   const links = [
@@ -59,21 +59,7 @@ const HomePage = () => {
           </p>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {links.map((item, index) => (
-              <Link
-                key={index}
-                target="_blank"
-                href={item.href}
-                className="theme-transition block transform rounded-xl bg-white p-6 shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl dark:bg-gray-800"
-              >
-                <h3
-                  className={`mb-2 text-2xl font-semibold text-${item.color}-500 dark:text-${item.color}-400 theme-transition`}
-                >
-                  {item.title}
-                </h3>
-                <p className="theme-transition text-gray-600 dark:text-gray-300">
-                  {item.description}
-                </p>
-              </Link>
+              <LinkItem {...item} key={index} />
             ))}
           </div>
         </section>
