@@ -61,7 +61,7 @@ A cutting-edge Next.js base project with TypeScript, React, ESLint, Prettier, Ta
 - 🌓 **Dark Mode** - Light/Dark mode with next-themes
 - 🦄 **Lint-Staged** - Run scripts on your staged files before they are committed
 - 🚀 **GitHub Actions** - Automate your workflows
-- ✅ **[Check Demo](https://current-stack-2024.vercel.app/)** - View a demo of the row check feature.
+- ✅ **[Check Demo](https://current-stack-2024.vercel.app/)** - View a demo.
 
 ## 🏗 Architecture
 
