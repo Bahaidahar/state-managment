@@ -1,0 +1,60 @@
+name: Next.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # Install dependencies using npm or yarn
+      - name: Install dependencies
+        run: npm install
+
+      # Run linting
+      - name: Run lint
+        run: npm run lint
+
+      # Build the project
+      - name: Build project
+        run: npm run build
+
+      # Run tests (optional if you have tests set up)
+      - name: Run tests
+        run: npm test
+
+      # Optional: Cache Node.js dependencies for faster builds
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Optional: Upload build artifacts
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: next-build
+          path: .next
