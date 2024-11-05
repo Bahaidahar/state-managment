@@ -385,6 +385,87 @@ class CounterPage extends StatelessWidget {
       </div>
     ),
   },
+  {
+    title: "ДЗ: Вермя деньги",
+    content: (
+      <div className="space-y-4">
+        <p>Сделайте Тайемр использую setState, Provider, BLoC</p>
+        Пример на setState
+        <pre className="mt-2 overflow-x-auto rounded-md bg-gray-100 p-4">
+          <code className="language-dart">
+            {`import 'dart:async';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: TimerScreen(),
+    );
+  }
+}
+
+class TimerScreen extends StatefulWidget {
+  @override
+  _TimerScreenState createState() => _TimerScreenState();
+}
+
+class _TimerScreenState extends State<TimerScreen> {
+  Timer? _timer;
+  int _start = 10; // Начальное значение таймера в секундах
+
+  // Метод для старта таймера
+  void startTimer() {
+    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+      if (_start > 0) {
+        setState(() {
+          _start--;
+        });
+      } else {
+        _timer?.cancel();
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Таймер')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Осталось времени: $_start секунд',
+              style: TextStyle(fontSize: 24),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: startTimer,
+              child: Text('Запустить таймер'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+`}
+          </code>
+        </pre>
+      </div>
+    ),
+  },
 ];
 
 export default function Component() {
