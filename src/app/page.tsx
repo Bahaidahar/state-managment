@@ -386,7 +386,7 @@ class CounterPage extends StatelessWidget {
     ),
   },
   {
-    title: "ДЗ: Вермя деньги",
+    title: "ДЗ: Время деньги",
     content: (
       <div className="space-y-4">
         <p>Сделайте Тайемр использую setState, Provider, BLoC</p>
